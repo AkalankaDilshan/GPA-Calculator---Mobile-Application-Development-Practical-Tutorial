@@ -22,6 +22,7 @@ class DBHelper (context: Context) :
     }
 
 
+
     override fun onUpgrade(db: SQLiteDatabase, oldVersion: Int, newVersion: Int) {
         db.execSQL(SQL_DELETE_ENTRIES)
         onCreate(db)
@@ -39,21 +40,27 @@ class DBHelper (context: Context) :
         credit3: Int,
         grade3: String?
     ) {
-        val values = ContentValues()
-        values.put("id", id)
-        values.put("course_1", course1)
-        values.put("credit_1", credit1)
-        values.put("grade_1", grade1)
-        values.put("course_2", course2)
-        values.put("credit_2", credit2)
-        values.put("grade_2", grade2)
-        values.put("course_3", course3)
-        values.put("credit_3", credit3)
-        values.put("grade_3", grade3)
+        try {
+            val values = ContentValues()
+            values.put("id", id)
+            values.put("course_1", course1)
+            values.put("credit_1", credit1)
+            values.put("grade_1", grade1)
+            values.put("course_2", course2)
+            values.put("credit_2", credit2)
+            values.put("grade_2", grade2)
+            values.put("course_3", course3)
+            values.put("credit_3", credit3)
+            values.put("grade_3", grade3)
 
-        val db = this.writableDatabase
-        db.insert(TABLE_NAME, null, values)
+            val db = this.writableDatabase
+            db.insert(TABLE_NAME, null, values)
+        } catch (e: Exception) {
+            // Handle the exception
+            e.printStackTrace()
+        }
     }
+
 
 
 }

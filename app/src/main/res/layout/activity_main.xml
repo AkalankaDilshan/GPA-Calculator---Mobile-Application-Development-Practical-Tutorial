@@ -224,7 +224,7 @@
         android:radius="8dp">
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnViewGpa"
+            android:id="@+id/btnViewNextScreen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

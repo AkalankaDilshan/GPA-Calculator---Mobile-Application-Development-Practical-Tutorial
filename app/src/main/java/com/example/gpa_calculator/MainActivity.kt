@@ -1,29 +1,18 @@
 package com.example.gpa_calculator
 
+
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.gpa_calculator.ui.theme.GPA_CalculatorTheme
-
-import android.view.View
 import android.widget.Button
-import android.widget.EditText
 import android.widget.TextView
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.example.dbmyapp.DBHelper
 
 
 class MainActivity : AppCompatActivity() {
 
+    var idGlobal = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,17 +31,35 @@ class MainActivity : AppCompatActivity() {
         val grade_2  : TextView = findViewById(R.id.editTextGrade2)
         val grade_3  : TextView = findViewById(R.id.editTextGrade3)
 
+        var helper = DBHelper(applicationContext)
 
-        val btnView: Button = findViewById(R.id.btnViewGpa)
-        btnView.setOnClickListener {
 
-            //next screen
+        val btnGotoNextScreen: Button = findViewById(R.id.btnViewNextScreen)
+
+        btnGotoNextScreen.setOnClickListener {
+
+            val id = ++idGlobal
+
+            helper.insertData(
+                id.toString(),
+                course_1.text?.toString(),
+                credit_1.text?.toString()?.toInt() ?: 0,
+                grade_1.text?.toString(),
+                course_2.text?.toString(),
+                credit_2.text?.toString()?.toInt() ?: 0,
+                grade_2.text?.toString(),
+                course_3.text?.toString(),
+                credit_3.text?.toString()?.toInt() ?: 0,
+                grade_3.text?.toString()
+            )
+
+            val bundle = Bundle()
+            bundle.putString("id_para", id.toString())
+
             val gotoNextScreen = Intent(applicationContext,SecondScreen::class.java)
+            gotoNextScreen.putExtras(bundle)
             startActivity(gotoNextScreen)
+        }
     }
-
-    }
-
-
 }
 

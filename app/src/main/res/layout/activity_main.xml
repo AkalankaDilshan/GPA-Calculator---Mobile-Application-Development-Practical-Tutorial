@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <!-- Course 1 Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="30px">
+
+        <TextView
+            android:id="@+id/textLabel1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/course_1" />
+
+        <EditText
+            android:id="@+id/editTextCourse1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <!-- Credits 1 Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="30px">
+
+        <TextView
+            android:id="@+id/textLabel2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/credits" />
+
+        <EditText
+            android:id="@+id/editTextCredit1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <!-- Grade 1 Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="100px">
+
+        <TextView
+            android:id="@+id/textLabel3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/grade" />
+
+        <EditText
+            android:id="@+id/editTextGrade1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <!-- Course 2 Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="30px">
+
+        <TextView
+            android:id="@+id/textLabel4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/course_2" />
+
+        <EditText
+            android:id="@+id/editTextCourse2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <!-- Credits 2 Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="30px">
+
+        <TextView
+            android:id="@+id/textLabel5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/credits" />
+
+        <EditText
+            android:id="@+id/editTextCredit2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <!-- Grade 2 Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="100px">
+
+        <TextView
+            android:id="@+id/textLabel6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/grade" />
+
+        <EditText
+            android:id="@+id/editTextGrade2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <!-- Course 3 Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="30px">
+
+        <TextView
+            android:id="@+id/textLabel7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/course_3" />
+
+        <EditText
+            android:id="@+id/editTextCourse3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <!-- Credits 3 Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="30px">
+
+        <TextView
+            android:id="@+id/textLabel8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/credits" />
+
+        <EditText
+            android:id="@+id/editTextCredit3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <!-- Grade 3 Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="200px">
+
+        <TextView
+            android:id="@+id/textLabel9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/grade" />
+
+        <EditText
+            android:id="@+id/editTextGrade3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <!-- Get Next Screen Button -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:padding="16dp"
+        android:radius="8dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnViewGpa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="?attr/colorPrimary"
+            android:stateListAnimator="@null"
+            android:text="Get Next Screen"
+            android:textColor="?android:textColorPrimaryInverse" />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

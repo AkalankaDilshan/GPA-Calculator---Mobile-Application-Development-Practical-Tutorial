@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GPA_Calculator</string>
+    <string name="credits">CREDITS</string>
+    <string name="grade">GRADE</string>
+    <string name="course_1">COURSE 1</string>
+    <string name="course_2">COURSE 2</string>
+    <string name="course_3">COURSE 3</string>
+    <string name="gpa">Overall GPA : </string>
+</resources>

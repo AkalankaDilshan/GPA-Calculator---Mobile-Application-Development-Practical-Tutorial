@@ -1,4 +1,5 @@
 # GPA Calculator App
+[![YouTube Video Thumbnail](https://img.youtube.com/vi/yRdtsU7yU68/maxresdefault.jpg)](https://youtu.be/yRdtsU7yU68)
 
 ## Overview
 

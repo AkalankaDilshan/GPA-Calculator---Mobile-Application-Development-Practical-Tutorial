@@ -16,8 +16,8 @@ class SecondScreen : AppCompatActivity(){
         grade1: String?,
         grade2: String?,
         grade3: String?
-    ): Double {
-        // Assuming the standard GPA scale (4.0 for A, 3.0 for B, etc.)
+    ): Any {
+        // Assuming the standard GPA scale
         val gradeToGPA = mapOf(
             "A" to 4.0,
             "A-" to 3.7,
@@ -43,7 +43,7 @@ class SecondScreen : AppCompatActivity(){
 
         // Calculate total grade points
         val totalGradePoints =
-            safeCredit1 * gradeToGPA[safeGrade1]!! + safeCredit2 * gradeToGPA[safeGrade2]!! + safeCredit3 * gradeToGPA[safeGrade3]!!
+            safeCredit1 * (gradeToGPA[safeGrade1] ?: 0.0) + safeCredit2 * (gradeToGPA[safeGrade2] ?: 0.0) + safeCredit3 * (gradeToGPA[safeGrade3] ?: 0.0)
 
         // Calculate total credit hours
         val totalCreditHours = safeCredit1 + safeCredit2 + safeCredit3
@@ -105,22 +105,18 @@ class SecondScreen : AppCompatActivity(){
                 grade_2.text = grade2Value
                 grade_3.text = grade3Value
 
-                 //Call Calculate GPA funtion
-//                val calculatedGPA = calculateGPA(
-//                    credit_1.text.toString().toInt(),
-//                    credit_2.text.toString().toInt(),
-//                    credit_3.text.toString().toInt(),
-//                    grade_1.text.toString(),
-//                    grade_2.text.toString(),
-//                    grade_3.text.toString()
-//                )
+                 //Call  GPA Calculate function
+                val calculatedGPA = calculateGPA(
+                    credit_1.text.toString().toInt(),
+                    credit_2.text.toString().toInt(),
+                    credit_3.text.toString().toInt(),
+                    grade_1.text.toString(),
+                    grade_2.text.toString(),
+                    grade_3.text.toString()
+                )
 
                 // Set the calculated GPA to the TextView
-                gpa.text = "35"
-                val grade3 = grade_3.text.toString()
-
-
-                println("$credit_1, $grade_1, $credit_2, $grade_2, $credit_3, $grade_3")
+                gpa.text = "${calculatedGPA}"
 
 
 

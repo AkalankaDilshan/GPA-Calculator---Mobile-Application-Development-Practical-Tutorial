@@ -16,7 +16,8 @@ This Android application is a GPA calculator that allows users to input their co
 1. Clone the repository:
 
    ```bash
-   [git clone https://github.com/your-username/gpa-calculator.git](https://github.com/AkalankaDilshan/GPA-Calculator---Mobile-Application-Development-Practical-Tutorial-.git)
+     git clone https://github.com/AkalankaDilshan/GPA-Calculator---Mobile-Application-Development-Practical-Tutorial.git 
+
 
 2. Open the project in Android Studio.
 
